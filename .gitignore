@@ -1,0 +1,26 @@
+# Build
+bin/
+obj/
+
+# VS / VS Code
+.vscode/
+*.user
+*.suo
+
+# Secrets
+appsettings.Development.json
+*.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.env
+docker-compose.override.yml
+
+# ASP.NET secrets
+secrets.json
