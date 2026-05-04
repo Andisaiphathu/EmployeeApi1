@@ -26,17 +26,18 @@ namespace EmployeeManagementSystem.Data
         .Property(e => e.Salary)
         .HasPrecision(18, 2);
         
+
         modelBuilder.Entity<UserAccount>().HasData(
-    
         new UserAccount
         {
-        Id = 1, 
+        Id = 1,
         FullName = "Super Admin",
         EmailAddress = "superadmin@example.com",
-        Password = passwordHandler.HashPassword("ChangeMe123!"),
+        Password = "PASTE_HASH_HERE",
         Role = "SuperAdmin"
         }
         );
+       
 
         var resetToken = modelBuilder.Entity<PasswordResetToken>();
 

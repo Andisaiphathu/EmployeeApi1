@@ -36,7 +36,8 @@ namespace EmployeeManagementSystem.BackgroundServices
 
             var expiredTokens = await dbContext.RefreshTokens
                 .Where(t => t.Expiry < DateTime.UtcNow)
-                .ToListAsync();
+                .Take(100) 
+                .ToListAsync(stoppingToken);
 
             if (expiredTokens.Any())
             {

@@ -122,6 +122,8 @@ namespace EmployeeManagementSystem.Services
                 await client.AuthenticateAsync(Email, Password);
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
+
+                
                 }
     }
 }

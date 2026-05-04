@@ -186,6 +186,9 @@ public class AccountController : ControllerBase
     if (!ModelState.IsValid)
         return BadRequest(ModelState);
 
+    var userAccount = await _dbContext.UserAccounts
+        .FirstOrDefaultAsync(x => x.EmailAddress.ToLower() == request.Email.ToLower());
+
     var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
 
      if (string.IsNullOrEmpty(ipAddress) || ipAddress == "::1")

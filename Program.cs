@@ -31,6 +31,19 @@ builder.Services.AddProblemDetails(options =>
 });
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
+
 builder.Services.Configure<AppSettings>(
     builder.Configuration.GetSection("App"));
 
@@ -106,15 +119,24 @@ builder.Services.AddHostedService<EmailBackgroundService>();
   //Database Connection
   
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(10),
+                errorNumbersToAdd: null
+            );
+        }));
+        
 // Configure Serilog
 builder.Host.UseSerilog((context, config) => config.ReadFrom.Configuration(context.Configuration));
 
-// https port
+//https port
 builder.Services.AddHttpsRedirection(options =>
 {
-    options.HttpsPort = 7039; 
+   options.HttpsPort = 7039; 
 });
 
 
@@ -130,7 +152,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseExceptionHandler();
 
-app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
 
 app.UseAuthentication(); 
 app.UseAuthorization();
