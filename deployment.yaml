@@ -2,26 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: employee-api
-
 spec:
   replicas: 2
-  
   selector:
     matchLabels:
       app: employee-api
-
   template:
     metadata:
       labels:
         app: employee-api
-
     spec:
       containers:
         - name: api
           image: shumelavenda/employee-api
           ports:
             - containerPort: 80
-            
           envFrom:
             - secretRef:
                 name: api-secrets
