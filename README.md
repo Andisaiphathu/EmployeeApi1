@@ -7,6 +7,8 @@
 
 # **1. Tech Stack**
 
+<img width="3111" height="2202" alt="table" src="https://github.com/user-attachments/assets/880743a0-3107-4bae-9a05-95b06514c132" />
+
 # **2. Key Feauters**
 
 - User Registration & Login
@@ -111,21 +113,11 @@ dotnet test
 
 **11. Environment Variables**
 
-```md
-## 🔑 Environment Variables
+<img width="1452" height="562" alt="Screenshot 2026-05-08 204727" src="https://github.com/user-attachments/assets/4c0b7310-10e0-4621-a973-e300844ae682" />
 
-| Variable | Default | Description |
-|---------|--------|------------|
-| ConnectionStrings__DefaultConnection | - | Database connection |
-| JwtConfig__Key | - | JWT secret key |
-| JwtConfig__Issuer | localhost | Token issuer |
-| JwtConfig__Audience | localhost | Token audience |
-| EmailSettings__Host | smtp | SMTP server |
-| EmailSettings__Email | - | Email address |
-| EmailSettings__Password | - | Email password |
-| EmailSettings__Port | 587 | SMTP port |
 
 **12. Kubernetes**
+
 ### Apply deployment
 
 ☸ Kubernetes Deployment
