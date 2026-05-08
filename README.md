@@ -59,7 +59,7 @@
 - SQL Server
 - Git
 
-** ▶ Run with Docker Compose**
+**▶ Run with Docker Compose**
 
 docker-compose up --build
 
@@ -87,7 +87,7 @@ http://localhost:5000
 
 <img width="535" height="816" alt="Screenshot 2026-05-02 122625" src="https://github.com/user-attachments/assets/0f4facf8-f0d4-47b0-a7c6-93ff1999eecd" />
 
-### Swagger UI
+Swagger UI
 http://localhost:5000/swagger
 
 # **9. PostMan APIs**
