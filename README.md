@@ -1,4 +1,4 @@
-# ** Employee Management System API**
+# **Employee Management System API**
 
 **A secure, Scalable backend API built with ASP.NET CORE 8, implementing authentication, role-based access and production ready DevOps practices.**
 
