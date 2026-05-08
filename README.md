@@ -49,7 +49,7 @@
 **Use Case Diagram**
 <img width="709" height="179" alt="image" src="https://github.com/user-attachments/assets/268d4bc6-f05c-4feb-b5f1-84e64da5849d" />
 
-**5. Quick Start**
+# **5. Quick Start**
 
 **Quick Start**
 
@@ -63,7 +63,7 @@
 
 docker-compose up --build
 
-**6. CI/CD Pipeline**
+# **6. CI/CD Pipeline**
 - Docker + CI/CD
 - Build Docker Image
 - Push to DockerHub
@@ -78,7 +78,7 @@ http://localhost:5000
 - dotnet run
 
 
-**###8. API Endpoints**
+# **8. API Endpoints**
 <img width="1920" height="1080" alt="Screenshot (469)" src="https://github.com/user-attachments/assets/b9bc94b3-a262-4f77-afcc-1df1bfe66ae3" />
 
 <img width="1806" height="826" alt="Screenshot 2026-05-04 201835" src="https://github.com/user-attachments/assets/b2aa861d-024e-4cc8-b074-d25cd30bcddf" />
@@ -90,20 +90,20 @@ http://localhost:5000
 ### Swagger UI
 http://localhost:5000/swagger
 
-**####9. PostMan APIs**
+# **9. PostMan APIs**
 
 <img width="1196" height="914" alt="Screenshot 2026-05-02 150141" src="https://github.com/user-attachments/assets/4ab8d53c-481b-473a-8603-216f46701c52" />
 
 <img width="1198" height="901" alt="Screenshot 2026-05-02 145547" src="https://github.com/user-attachments/assets/3fcc8423-5853-4453-b387-f64a68daa0d0" />
 
-**###10. Default Admin Account**
+# **10. Default Admin Account**
 
 **Default Admin**
 
 Email: superadmin@example.com  
 Password: (seeded in DB – change after first login)
 
-**###11. Running Tests**
+# **11. Running Tests**
 
 **Running Tests**
 
@@ -111,12 +111,12 @@ dotnet test
 
 
 
-**###11. Environment Variables**
+# **11. Environment Variables**
 
 <img width="1452" height="562" alt="Screenshot 2026-05-08 204727" src="https://github.com/user-attachments/assets/4c0b7310-10e0-4621-a973-e300844ae682" />
 
 
-**###12. Kubernetes**
+# **12. Kubernetes**
 
 ### Apply deployment
 
