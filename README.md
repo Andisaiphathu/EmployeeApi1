@@ -25,7 +25,7 @@
 - Kubernetes
   
 # **3. Project Architecture**
-<img width="1885" height="472" alt="image" src="https://github.com/user-attachments/assets/29fbc4ea-d754-46e1-9e06-7b99635a1f0b" />
+<img width="1969" height="364" alt="image" src="https://github.com/user-attachments/assets/9b64da7f-a652-43c6-bf58-db2bcede1a33" />
 
 # **4. BPMN Workflows (PlantUML)**
 **User Register**
